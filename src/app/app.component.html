@@ -1,0 +1,179 @@
+<div class="form" #print_div>
+  <div class="title">
+    <h1>家庭疾病负担量表（FBS）</h1>
+  </div>
+  <div class="area">
+    <h3>一、基本信息</h3>
+    <div class="ui-g">
+      <div class="ui-g-12">
+        <div class="ui-g">
+          <div class="ui-g-2">1.家属姓名</div>
+          <div class="ui-g-10">
+            <input type="text" pInputText>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui-g-12">
+        <div class="ui-g">
+          <div class="ui-g-2">2.性别</div>
+          <div class="ui-g-10">
+            <p-radioButton name="sex" value="0" label="男"></p-radioButton>
+            <p-radioButton name="sex" value="1" label="女"></p-radioButton>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui-g-12">
+        <div class="ui-g">
+          <div class="ui-g-2">3.出生日期</div>
+          <div class="ui-g-10">
+            <p-calendar showIcon="true"></p-calendar>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui-g-12">
+        <div class="ui-g">
+          <div class="ui-g-2">4.文化程度</div>
+          <div class="ui-g-10">
+            <p-radioButton name="edu" value="0" label="文盲"></p-radioButton>
+            <p-radioButton name="edu" value="1" label="小学"></p-radioButton>
+            <p-radioButton name="edu" value="2" label="初中"></p-radioButton>
+            <p-radioButton name="edu" value="3" label="高中"></p-radioButton>
+            <p-radioButton name="edu" value="4" label="大学及以上"></p-radioButton>
+            <p-radioButton name="edu" value="5" label="不详"></p-radioButton>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui-g-12">
+        <div class="ui-g">
+          <div class="ui-g-2">5.照顾患者的年数</div>
+          <div class="ui-g-10">
+            <input type="text" pInputText>年
+          </div>
+        </div>
+      </div>
+
+      <div class="ui-g-12">
+        <div class="ui-g">
+          <div class="ui-g-2">6.身体健康状况</div>
+          <div class="ui-g-10">
+            <p-radioButton name="hel" value="0" label="良好"></p-radioButton>
+            <p-radioButton name="hel" value="1" label="一般"></p-radioButton>
+            <p-radioButton name="hel" value="2" label="差"></p-radioButton>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="area">
+    <h3>二、疾病家庭负担测量 与您的家人患病前相比，您在以下各项是否受到影响（请直接在框内勾选）</h3>
+    <div class="ui-g-12">
+      <div class="ui-g-1">序号</div>
+      <div class="ui-g-8">经济负担</div>
+      <div class="ui-g-3">
+        <div class="ui-g-4">没有影响</div>
+        <div class="ui-g-4">有影响</div>
+        <div class="ui-g-4">严重影响</div>
+      </div>
+
+      <div class="ui-g-12">
+        <div class="ui-g-1">1a</div>
+        <div class="ui-g-8">患者收入是否受损失</div>
+        <div class="ui-g-3">
+          <div class="ui-g-4">
+            <p-radioButton name="q1" value="0" label="0"></p-radioButton>
+          </div>
+          <div class="ui-g-4">
+            <p-radioButton name="q1" value="1" label="1"></p-radioButton>
+          </div>
+          <div class="ui-g-4">
+            <p-radioButton name="q1" value="2" label="2"></p-radioButton>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui-g-12">
+        <div class="ui-g-1">1b</div>
+        <div class="ui-g-8">家庭成员的收入是否受到损失</div>
+        <div class="ui-g-3">
+          <div class="ui-g-4">
+            <p-radioButton name="q2" value="0" label="0"></p-radioButton>
+          </div>
+          <div class="ui-g-4">
+            <p-radioButton name="q2" value="1" label="1"></p-radioButton>
+          </div>
+          <div class="ui-g-4">
+            <p-radioButton name="q2" value="2" label="2"></p-radioButton>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui-g-12">
+        <div class="ui-g-1">1c</div>
+        <div class="ui-g-8">用于患者疾病的开支对家庭经济是否造成影响</div>
+        <div class="ui-g-3">
+          <div class="ui-g-4">
+            <p-radioButton name="q3" value="0" label="0"></p-radioButton>
+          </div>
+          <div class="ui-g-4">
+            <p-radioButton name="q3" value="1" label="1"></p-radioButton>
+          </div>
+          <div class="ui-g-4">
+            <p-radioButton name="q3" value="2" label="2"></p-radioButton>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui-g-12">
+        <div class="ui-g-1">1d</div>
+        <div class="ui-g-8">因额外安排（如看护、保姆等）使家庭开支是否受到影响</div>
+        <div class="ui-g-3">
+          <div class="ui-g-4">
+            <p-radioButton name="q4" value="0" label="0"></p-radioButton>
+          </div>
+          <div class="ui-g-4">
+            <p-radioButton name="q4" value="1" label="1"></p-radioButton>
+          </div>
+          <div class="ui-g-4">
+            <p-radioButton name="q4" value="2" label="2"></p-radioButton>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div>
+  <e-ngx-print [btnText]="'iframe模式打印'" [btnClass]="{'btn': true, 'btn-success': true}" [printHTML]="print_div" [printStyle]="printStyle"
+    [printCSS]="printCSS" (printComplete)="printComplete()">
+  </e-ngx-print>
+</div>
+
+<div>
+  <e-ngx-print [btnText]="'iframe模式打印字符串'" [btnClass]="{'btn': true, 'btn-success': true}" [printHTML]="editorText" (printComplete)="printComplete()">
+  </e-ngx-print>
+</div>
+
+<div>
+  <e-ngx-print #print1 [showBtn]="false" [printHTML]="print_div" [printStyle]="printStyle" [printCSS]="printCSS" (printComplete)="printComplete()">
+  </e-ngx-print>
+  <button class="btn btn-primary" (click)="customPrint('print1')">自定义打印（iframe模式）</button>
+</div>
+
+<div>
+  <e-ngx-print [mode]="'popup'" [popTitle]="'表格打印'" [btnText]="'popup模式打印'" [btnClass]="{'btn': true, 'btn-warning': true}"
+    [printHTML]="print_div" [printStyle]="printStyle" [printCSS]="printCSS" (printComplete)="printComplete()">
+  </e-ngx-print>
+</div>
+
+<div>
+  <e-ngx-print #print2 [mode]="'popup'" [popTitle]="'表格打印'" [showBtn]="false" [printHTML]="print_div" [printStyle]="printStyle"
+    [printCSS]="printCSS" (printComplete)="printComplete()">
+  </e-ngx-print>
+  <button class="btn btn-primary" (click)="customPrint('print2')">自定义打印（popup模式）</button>
+</div>
